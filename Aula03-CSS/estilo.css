@@ -1,0 +1,54 @@
+/* Universal */
+*{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url("fundo_azul.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Agrupados */
+h2, h3{
+    color: rgb(183, 217, 183);
+}
+
+/* Elemento HTML */
+p{
+    color: darkmagenta;
+}
+
+/* ID -> #       */
+#cor_vermelha{
+    color: darkred;
+}
+
+/* CLASS -> .   */
+.negrito{
+    font-weight: bold;
+}
+
+#cabecalho{
+    border: 2px solid #000000;
+    padding: 100px; /* Borda para dentro*/
+    margin: 50px;   /* Borda para fora*/
+    background-color: #9e74c969;
+    width: 70%;
+    margin: 0 auto; /* centralizar a div */
+    height: 200px;
+}
+
+#rodape{
+    /* border: 10px dotted #000000; */
+    /* border: dotted #000000 10px ; */
+    border-width: 5px;
+    border-style: dotted;
+    border-color: #fcfbfb;
+
+    border-radius: 100px;
+
+    padding: 5px 10px 15px 3px; /*Sup-Dir-Inf-Esq*/
+    background-color: #58669db2;
+}
