@@ -31,8 +31,8 @@ a:hover{
 }
 
 header{
-    width: 70%;
     margin-top: 20px;
+    width: 70%;
 }
 
 .foto{
@@ -60,5 +60,23 @@ footer{
 }
 
 section {
-    height: 200px;
+    width: 70%;
+}
+
+.post{
+    background: #fff;
+    padding: 10px;
+    border: 3px solid #6e6a6a;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#titulo{
+    font-size: 40px;
+    text-transform: uppercase;
+    float: right;
+}
+
+.img_post{
+    width: 100%;
 }
