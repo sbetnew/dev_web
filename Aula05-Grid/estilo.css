@@ -1,19 +1,122 @@
 /* RECURSO 1 - GRID BÁSICA*/
+/*
 .container{
     background-color: rgb(106, 152, 238);
     border: 1px solid rgb(13, 13, 49);
     padding: 15px;
     display: grid;
     grid-template-columns: 50px auto 20%;
-    height: 400px; /* Forma Altura TODAS linhas */
-    grid-template-rows: 70% 30%; /* Altura Individual */
-    gap: 5px; /*Espaçamentos TODOS*/
-    grid-row-gap: 10px; /*Espaçamento Linha*/
-    grid-column-gap: 20px; /*Espaçamento Coluna*/
+    height: 400px; 
+    grid-template-rows: 70% 30%; 
+    gap: 5px;
+    grid-row-gap: 10px; 
+    grid-column-gap: 20px; 
 }
 
 .container div{
     background-color: rgb(177, 77, 227);
     padding: 20px;
     border: 1px solid black;
+}  
+*/
+
+/* RECURSO 2 - TEMPLATE AREAS*/
+/*
+.container {
+    background-color: rgb(106, 152, 238);
+    border: 1px solid rgb(13, 13, 49);
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        'header header header header'
+        'sidebar content content content'
+        'footer footer footer footer';
+}
+
+#header {
+    grid-area: header;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    height: 40vh;
+}
+
+#content {
+    grid-area: content;
+    height: 40vh;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+.container div {
+    background-color: rgb(177, 77, 227);
+    padding: 20px;
+    border: 1px solid black;
+}
+*/
+
+/* RECURSO 3 - ALINHAMENTO GERAL */
+/*.container {
+    background-color: rgb(106, 152, 238);
+    border: 1px solid rgb(13, 13, 49);
+    padding: 15px;
+    display: grid;
+    height: 400px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: start;
+}
+
+.container div {
+    background-color: rgb(177, 77, 227);
+    padding: 20px;
+    border: 1px solid black;
+}
+*/
+
+/* RECURSO 4 - ALINHAMENTO INDIVIDUAL */
+.container {
+    background-color: rgb(106, 152, 238);
+    border: 1px solid rgb(13, 13, 49);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container div {
+    background-color: rgb(177, 77, 227);
+    padding: 20px;
+    border: 1px solid black;
+}
+
+#item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#item-2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#item-3 {
+    justify-self: end;
+    height: 100px;
+}
+
+#item-5 {
+    justify-self: start;
+    height: 100px;
+}
+
+#item-4 {
+    align-self: center;
+}
+
+#item-6 {
+    align-self: end;
 }
