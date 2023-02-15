@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+</head>
+
+
+<body>
+
+    <h1>Exercício 06</h1>
+
+    <script>
+
+        salario = Number(prompt('Informe o salário:'))
+
+
+
+        if (salario <= 280) {
+            final = (salario * 1.2)
+            aumento = 20
+
+        }
+        else if (salario <= 700) {
+            final = (salario * 1.15)
+            aumento = 15
+
+        }
+        else if (salario <= 1500) {
+            final = (salario * 1.1)
+            aumento = 10
+
+        }
+        else {
+            final = (salario * 1.05)
+            aumento = 5
+        }
+        document.write(`Salário antes do reajuste:R$  ${salario}.<br>`)
+        document.write(`Percentual de aumento:  ${aumento} %.<br>`)
+        document.write(`Valor do aumento :R$  ${final - salario}.<br>`)
+        document.write(`Novo salário:R$  ${final}.<br>`)
+
+
+    </script>
+
+</body>
+
+</html>

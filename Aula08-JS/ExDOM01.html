@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Exercício DOM</title>
+</head>
+
+<body>
+    <h1 id="T1">Iniciando com os estudos DOM!</h1>
+    <p>Aqui vai o resultado!</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim!</div>
+    <hr>
+
+    <script>
+
+        /* Acessando Informações do Navegador e Documento */
+        document.write(window.navigator.appName + '<br>')
+        document.write(window.document.URL + '<br>')
+        document.write(window.document.charset + '<br>')
+
+        /* Acessando os Elementos */
+        /* POR MARCA ou TAG*/
+
+        var p1 = document.getElementsByTagName('p')[0] //1º Parágrafo
+        p1.style.color = 'blue'
+
+        //Mudar o Elemento BODY para background amarelo
+        var corpo = document.getElementsByTagName('body')[0]
+        corpo.style.background = 'yellow'
+
+        document.write(p1.innerText + '<br>') //Texto PURO
+        document.write(p1.innerHTML + '<br>') //Texto + Formatação
+
+        /* POR ID */
+        var msg = document.getElementById('msg')
+        msg.style.background = 'green'
+        msg.innerText = 'Estou aguardando...'
+
+        /* POR SELETOR */
+        var t = document.querySelector('#T1')
+        t.innerText = 'Olá!'
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+</head>
+
+
+<body>
+
+    <h1>Exercício 05</h1>
+
+    <script>
+
+        nome = (prompt('Digite o nome:'))
+        n1 = Number(prompt('Digite a primeira nota:'))
+        n2 = Number(prompt('Digite a segunda nota:'))
+        n3 = Number(prompt('Digite a terceira nota:'))
+
+        media = (n1 + n2 + n3) / 3
+
+
+        if (media >= 9) {
+
+            conceito = "A"
+        }
+        else if (media >= 7.5) {
+
+            conceito = "B"
+        }
+        else if (media >= 6) {
+
+            conceito = "C"
+        }
+        else if (media >= 4) {
+
+            conceito = "D"
+        }
+        else {
+            conceito = "E"
+        }
+
+        if (conceito == "A" || conceito == "B" || conceito == "C") {
+            status = "APROVADO"
+        }
+
+        else {
+            status = "REPROVADO"
+        }
+
+        document.write(`Aluno: ${nome}.<br>`)
+        document.write(`Nota 1: ${n1}.<br>`)
+        document.write(`Nota 2: ${n2}.<br>`)
+        document.write(`Nota 3: ${n3}.<br>`)
+        document.write(`Conceito: ${conceito}.<br>`)
+        document.write(`Status: ${status}.<br>`)
+
+
+    </script>
+
+</body>
+
+</html>
